@@ -92,7 +92,7 @@ var isBoxSizeOuter;
   body.appendChild( div );
   var style = getStyle( div );
 
-  isBoxSizeOuter = getStyleSize( style.width ) === 200;
+  isBoxSizeOuter = Math.round( getStyleSize( style.width ) ) === 200;
   body.removeChild( div );
 })();
 
